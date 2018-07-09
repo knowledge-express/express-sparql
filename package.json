@@ -1,6 +1,6 @@
 {
   "name": "express-sparql",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Easy SPARQL server with express.js",
   "main": "lib/index.js",
   "author": "Steffan Sluis <steffansluis@gmail.com>",
