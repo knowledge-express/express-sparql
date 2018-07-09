@@ -20,7 +20,7 @@ export function createHandler({ queryFn, updateFn, encodeFn }: SPARQLHandlerOpti
     try {
       const {
         method,
-        headers: { 'content-type': contentType, accept: acceptType },
+        headers: { 'content-type': contentType, accept: acceptType = 'application/sparql-results+json' },
         query: queryParams,
         body,
       } = req;

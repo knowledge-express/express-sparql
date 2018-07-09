@@ -1,3 +1,4 @@
+import * as express from 'express';
 export declare type SPARQLQuery = string;
 export declare type SPARQLUpdate = string;
 export declare type SPARQLQueryResponse = any;
@@ -11,5 +12,5 @@ export declare type SPARQLHandlerOptions = {
     updateFn?: UpdateFn;
     encodeFn: EncodeFn;
 };
-export declare function createHandler({queryFn, updateFn, encodeFn}: SPARQLHandlerOptions): any;
+export declare function createHandler({queryFn, updateFn, encodeFn}: SPARQLHandlerOptions): express.Handler;
 export default createHandler;
